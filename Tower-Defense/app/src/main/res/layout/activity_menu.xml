@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu">
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/menu_title_text"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        style="@style/luxurious"
+        android:textColor="@color/black"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/menu_spielerklaerung"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:onClick="onClickSpielerklaerungSwtichToOnboarding"
+
+        android:text="@string/menu_button_spielerklaerung_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/menu_neuesSpiel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_title"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/menu_neuesSpiel"
+        android:onClick="onClickSpielStartenSwitchToLevelauswahl"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/menu_button_neuesSpiel_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/menu_spielFortsetzen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_spielerklaerung"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/menu_spielFortsetzen"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/menu_button_spielFortsetzen_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/menu_einstellungen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_neuesSpiel"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/menu_einstellungen"
+        android:onClick="onClickEinstellungenSwitchToEinstellungen"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+
+        android:text="@string/menu_button_einstellungen_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/menu_extras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_spielFortsetzen"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/menu_extras"
+        android:onClick="onClickExtrasSwitchToExtras"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/menu_button_extras_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_einstellungen"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/menu_hilfe"
+        android:onClick="onClickHilfeDisplayHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+
+        android:text="@string/button_hilfe_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/menu_hilfeSchliessen"
+        android:onClick="onClickHilfeSchliessenCloseHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+
+        android:text="@string/button_hilfeSchliessen_text"
+        android:textColor="@color/black"
+        style="@style/luxurious"
+        android:textSize="15sp"
+        android:padding="5dp"
+
+        android:clickable="false"
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/menu_informationLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_background_black_borders"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_extras"
+        app:layout_constraintEnd_toEndOf="@+id/menu_spielFortsetzen"
+        app:layout_constraintStart_toStartOf="@+id/menu_spielFortsetzen"
+        app:layout_constraintTop_toTopOf="@+id/menu_spielerklaerung">
+
+        <ImageButton
+            android:id="@+id/menu_closeInformationBtn"
+            android:onClick="onClickInformationSchliessen"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@color/red_holo"
+            android:src="@drawable/close"
+
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background_black_borders">
+
+            <LinearLayout
+                android:id="@+id/menu_informationScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/menu_informationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    style="@style/luxurious"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/menu_informationTutorialButton"
+        android:onClick="onClickInformationButton"
+        android:tag="0"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_spielerklaerung"
+        app:layout_constraintEnd_toStartOf="@+id/menu_spielerklaerung"
+        app:layout_constraintTop_toTopOf="@+id/menu_spielerklaerung"
+        android:layout_marginEnd="5dp" />
+
+    <ImageButton
+        android:id="@+id/menu_informationNewGameButton"
+        android:onClick="onClickInformationButton"
+        android:tag="1"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_neuesSpiel"
+        app:layout_constraintEnd_toStartOf="@+id/menu_neuesSpiel"
+        app:layout_constraintTop_toTopOf="@+id/menu_neuesSpiel"
+        android:layout_marginEnd="5dp" />
+
+    <ImageButton
+        android:id="@+id/menu_informationContinueButton"
+        android:onClick="onClickInformationButton"
+        android:tag="2"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_spielFortsetzen"
+        app:layout_constraintEnd_toStartOf="@+id/menu_spielFortsetzen"
+        app:layout_constraintTop_toTopOf="@+id/menu_spielFortsetzen"
+        android:layout_marginEnd="5dp" />
+
+    <ImageButton
+        android:id="@+id/menu_informationSettingsButton"
+        android:onClick="onClickInformationButton"
+        android:tag="3"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_einstellungen"
+        app:layout_constraintEnd_toStartOf="@+id/menu_einstellungen"
+        app:layout_constraintTop_toTopOf="@+id/menu_einstellungen"
+        android:layout_marginEnd="5dp"/>
+
+    <ImageButton
+        android:id="@+id/menu_informationExtrasButton"
+        android:onClick="onClickInformationButton"
+        android:tag="4"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/menu_extras"
+        app:layout_constraintEnd_toStartOf="@+id/menu_extras"
+        app:layout_constraintTop_toTopOf="@+id/menu_extras"
+        android:layout_marginEnd="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

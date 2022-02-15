@@ -1,0 +1,180 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- general -->
+    <string name="app_name">Tower-Defense</string>
+    <string name="button_hilfe_text">Hilfe</string>
+    <string name="button_hilfeSchliessen_text">Hilfe\nschließen</string>
+    <string name="button_zurueck_text">Zurück</string>
+    <string name="left_shadowed_arrow_to_the_right">➪</string>
+    <string name="white_arrow_right">⇨</string>
+    <string name="white_arrow_left">⇦</string>
+
+    <!-- Hauptmenü -->
+    <string name="menu_title_text">TOWER DEFENSE</string>
+    <string name="menu_button_spielerklaerung_text">Spielerklärung</string>
+    <string name="menu_button_neuesSpiel_text">Neues Spiel</string>
+    <string name="menu_button_spielFortsetzen_text">Spiel Fortsetzen</string>
+    <string name="menu_button_spielFortsetzen_wave_text">Welle: </string>
+    <string name="menu_button_spielFortsetzen_gold_text">Gold: </string>
+    <string name="menu_button_spielFortsetzen_Level_text">Level: </string>
+    <string name="menu_button_einstellungen_text">Einstellungen</string>
+    <string name="menu_button_extras_text">Extras</string>
+    <string name="menu_hilfe_desc1_text">Hier wird ihnen das Spiel erklärt anhand von Bildern.</string>
+    <string name="menu_hilfe_desc2_text">Hier wird ein neues Spiel gestartet, Falls sie einen alten Spielstand
+    besitzen wird dieser gelöscht.</string>
+    <string name="menu_hilfe_desc3_text">Falls Sie bereits gespielt haben, können sie hier ihren alten Spielstand weiterspielen</string>
+    <string name="menu_hilfe_desc4_text">Hier können Sie Einstellungen für die App vornehmen, wie z.B die Größe der Buttons einzustellen</string>
+    <string name="menu_hilfe_desc5_text">Hier finden Sie Extra-Funktionen wie z.B ein Lexikon über die verschiedenen Entitäten des Spiels</string>
+
+    <!-- Levelauswahl -->
+    <string name="levelauswahl_title_text">Levelauswahl</string>
+    <string name="levelauswahl_button_hilfe_text">Hilfe</string>
+    <string name="levelauswahl_button_zurueck_text">Zurück</string>
+    <string name="levelauswahl_button_level_1_text">Level 1</string>
+    <string name="levelauswahl_button_level_2_text">Level 2</string>
+    <string name="levelauswahl_button_level_3_text">Level 3</string>
+    <string name="levelauswahl_button_spielStarten_text">
+        Spiel starten\n
+        (Achtung! Ihr alter Spielstand wird gelöscht!)
+    </string>
+    <string name="levelauswahl_hilfe_desc1_text">Hier können Sie ihr jeweiliges Level auswählen. Das ausgewählte Level
+    wird umrandet angezeigt</string>
+    <string name="levelauswahl_hilfe_desc2_text">Durch drücken dieses Buttons, wird ein neues Spiel gestartet mit
+    dem Level, welches Sie ausgewählt haben</string>
+
+    <!-- Extras -->
+    <string name="extras_title_text">Extras</string>
+    <string name="extras_button_statistiken_text">Statistiken</string>
+    <string name="extras_button_lexikon_text">Lexikon</string>
+
+    <!-- todo Statistiken Info muss hinten noch mit Gold angepasst werden -->
+    <string name="extras_hilfe_desc1_text">Hier können Sie ihre Statistiken seit Installation der App ansehen, wie z.B Ihr gesamt ausgegebenes <Gold></Gold></string>
+    <string name="extras_hilfe_desc2_text">Hier können Sie das Lexikon, welches Einträge über Türme und Feinden enthält, anschauen.</string>
+
+
+    <!-- Statistiken -->
+    <string name="statistiken_title_text">Statistiken</string>
+    <string name="statistiken_placeholder">Mithilfe der Scrollbar können Sie durch ihre Statistiken navigieren</string>
+    <!-- Statisitken scrollView -->
+    <string name="statistiken_totalGames_text">Spiele insgesamt:\t\t\t</string>
+    <string name="statistiken_wavesCleared_text">Wellen beendet:\t\t\t</string>
+    <string name="statistiken_enemiesDefeated_text">Gegner besiegt:\t\t\t</string>
+    <string name="statistiken_goldEarned_text">Gold gesammelt:\t\t\t</string>
+    <string name="statistiken_goldSpend_text">Gold ausgegeben:\t\t\t</string>
+    <string name="statistiken_hilfe_desc1_text">Hier können Sie die Statistiken sehen</string>
+
+    <!-- Lexikon -->
+    <string name="lexikon_title_text">Lexikon</string>
+
+    <!-- Lexikon Category Enemies -->
+    <string name="lexikon_categoryEnemy_text">Gegner</string>
+    <string name="lexikon_enemy1_text">Gegner 1</string>
+    <string name="lexikon_enemy1_details_text">
+        Anzahl Leben:\t\t\t1\n
+        Geschwindigkeit:\t\t0.5 Felder pro Sekunde\n
+        verursachender Schaden:\t\t\t1\n
+        \n
+        Die Monster sind bei einem Zwischenstopp auf der Erde auf den Geschmack von Bier gekommen.
+        Sie versuchen alles um so auf viel menschlich gebräutes Bier wie möglich zu gelangen.
+        Beschütze das Bier um das Oktoberfest zu retten!
+    </string>
+    <string name="lexikon_enemy2_text">Gegner 2</string>
+    <string name="lexikon_enemy2_details_text">
+        Anzalh Leben:\t\t\t2\n
+        Geschwindigkeit:\t\t0.5 Felder pro Sekunde\n
+        verursachender Schaden:\t\t\t2\n
+        \n
+        Die Monster sind bei einem Zwischenstopp auf der Erde auf den Geschmack von Bier gekommen.
+        Jetzt forderten Sie stärkere Truppen an, da sie merken,dass die Menschen sich wehren.
+        Diese würden bereits seit ihrer Geburt mit dem Geschmack von Bier vertraut gemacht,
+        sodas ihr Wille auch den stahlharten Geschossen standhalten können.
+    </string>
+
+    <!-- Lexikon Category Towers -->
+    <string name="lexikon_categoryTower_text">Türme</string>
+    <string name="stonetower_text">Steinturm</string>
+    <string name="stonetower_details_text">
+        verursachender Schaden:\n1 Leben pro Sekunde\n
+        \n
+        Der Stein Turm schießt Bruchsteingeschosse um die Monster zu vertreiben,
+        damit die menschliche Zivilisation nicht durch Bierknappheit zugrunde geht.
+        Durch Upgrates steigt die Wirksamkeit der Türme, um den Plan der Monster wirksamer zu vereiteln.
+    </string>
+    <string name="irontower_text">Eisenturm</string>
+    <string name="irontower_details_text">
+        verursachender Schaden:\n2 Leben pro Sekunde\n
+        \n
+        Der Stahl Turm schießt stahlgeschmiedete Geschosse um die Monster zu vertreiben,
+        damit die menschliche Zivilisation nicht durch Bierknappheit zugrunde geht.
+        Dieser musste entwickelt werden, da der Steinturm nicht mehr ausreichend Schaden an den Monstern anrichten konnte
+        Durch Upgrates steigt die Wirksamkeit der Türme, um den Plan der Monster wirksamer zu vereiteln.
+    </string>
+    <string name="firetower_text">Feuerturm</string>
+    <string name="firetower_details_text">
+        verursachender Schaden:\n4 Leben pro Sekunde\n
+        \n
+        Der Feuer Turm schießt Feuergeschosse um die Monster zu vertreiben,
+        damit die menschliche Zivilisation nicht durch Bierknappheit zugrunde geht.
+        Durch Upgrates steigt die Wirksamkeit der Türme, um den Plan der Monster wirksamer zu vereiteln.
+    </string>
+
+    <string name="stonetower_description">verursachender Schaden:\n1 Leben pro Treffer\n</string>
+    <string name="irontower_description">verursachender Schaden:\n2 Leben pro Treffer\n</string>
+    <string name="firetower_description">verursachender Schaden:\n4 Leben pro Treffer\n</string>
+
+    <string name="stonetower_description_level2">verursachender Schaden:\n2 Leben pro Treffer\n</string>
+    <string name="irontower_description_level2">verursachender Schaden:\n4 Leben pro Treffer\n</string>
+    <string name="firetower_description_level2">verursachender Schaden:\n8 Leben pro Treffer\n</string>
+
+    <string name="lexikon_hilfe_desc1_text">Hier sehen Sie die Informationen über Feinde und Türme</string>
+    <string name="lexikon_hilfe_desc2_text">Placeholder 2</string>
+    <string name="lexikon_hilfe_desc3_text">Placeholder 3</string>
+
+    <!-- Einstellungen -->
+    <string name="einstellungen_title_text">Einstellungen</string>
+    <string name="einstellungen_buttongroesse_text">Buttongröße</string>
+    <string name="einstellungen_buttongroesse_button_klein_text">Klein</string>
+    <string name="einstellungen_buttongroesse_button_mittel_text">Mittel</string>
+    <string name="einstellungen_buttongroesse_button_gross_text">Groß</string>
+    <string name="einstellungen_musiklautstaerke_text">Musiklautstärke</string>
+    <string name="einstellungen_effektlautstaerke_text">Effektlautstärke</string>
+    <string name="einstellungen_hilfe_desc1_text">Hier können Sie die Größe der Buttons einstellen.
+    Die gedrückte Größe wird automatisch übernommen und angewandt</string>
+    <string name="einstellungen_hilfe_desc2_text">Hier können Sie die Lautstärke der Musik anpassen.
+    Der Regler verschiebt sich durch halten des Knopfes und dem gleichzeitigen Bewegen des Fingers</string>
+    <string name="einstellungen_hilfe_desc3_text">Hier können Sie die Lautstärke der Effekte, dass sind z.b
+    die Geräusche der Türme, einstellen</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_button_previous_text">Zurück</string>
+    <string name="onboarding_button_next_text">Weiter</string>
+    <string name="onboarding_button_next_finish_text">Fertig</string>
+    <!-- Slide 1 -->
+    <string name="slide1_heading_text">Hilfe-Button</string>
+    <string name="slide1_description_text">Slide 1\nDrücken Sie auf den Hilfe Button, wenn Sie in der Bedienung nicht weiter wissen.</string>
+    <!-- Slide 2 -->
+    <string name="slide2_heading_text">Grasfelder und Türme</string>
+    <string name="slide2_description_text">Hier sehen Sie Grasfelder und Türme. Drücken Sie während einer Spielrunde/Welle auf ein Grasfeld, können Sie auf dem ausgewählten Grasfeld neuen Turm bauen.\n
+        Drücken Sie auf einen bereits gebauten Turm, können Sie dessen Level verbessern, dadurch wird er stärker.
+    </string>
+    <!-- Slide 3 -->
+    <string name="slide3_heading_text">Gegner und ihr Weg</string>
+    <string name="slide3_description_text"> Gegner laufen von links nach rechts auf dem Weg in Richtung Burg. Türme machen Gegnern Schaden. Wenn Gegner sterben, werden Sie dafür mit Gold belohnt.
+    </string>
+    <!-- Slide 4 -->
+    <string name="slide4_heading_text">Burg und Leben </string>
+    <string name="slide4_description_text">Verhindern Sie durch strategisches Platzieren der Abwehrtürme, die  Gegner davon, die Burg zu erreichen. Erreicht ein Gegner die Burg, verlieren Sie Leben. Das Spiel ist verloren, wenn ihre Leben auf 0 sinken.
+    </string>
+    <!-- Pause -->
+    <string name="pause_menu_title_text">Pause-Menü</string>
+    <string name="puse_spiel_fortsetzen_text">Spiel Fortsetzen</string>
+    <string name="pause_speichern_hauptmenu_text">Speichern und zum Hauptmenü</string>
+    <string name="pause_musik_lautstarke_text">Musiklautstärke</string>
+    <string name="puase_effekt_laustarke_text">Effektlautstärke</string>
+    <string name="pause_hilfe_desc1_text">Setzen Sie ihr Spiel fort, welches sie pausiert haben</string>
+    <string name="pause_hilfe_desc2_text">Speichern Sie ihr derzeitiges Spiel und kehren Sie zum Hauptmenü
+    zurück. Sie können dort ihren aktuellen Spielstand erneut laden</string>
+    <string name="pause_hilfe_desc3_text">Hier können Sie ihre Musiklautstärke einstellen</string>
+    <string name="pause_hilfe_desc4_text">Hier können Sie ihre Effektlautstärke einstellen. Effekte
+    sind z.b die Geräusche der Türme</string>
+
+</resources>

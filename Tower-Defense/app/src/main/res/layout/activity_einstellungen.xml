@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_einstellungen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu">
+
+
+    <TextView
+        android:id="@+id/einstellungen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/einstellungen_title_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/einstellungen_hilfe"
+        android:onClick="onClickHilfeDisplayHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/button_hilfe_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"  />
+
+    <Button
+        android:id="@+id/einstellungen_hilfeSchliessen"
+        android:onClick="onClickHilfeSchliessenCloseHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+
+        android:enabled="false"
+        android:visibility="invisible"
+
+        android:text="@string/button_hilfeSchliessen_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+        android:padding="5dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/einstellungen_zurueck"
+        android:onClick="onClickZurueckSwitchToMenu"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/button_zurueck_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/buttongroesse_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/musiklautstaerke_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/einstellungen_title"
+        android:background="@drawable/white_background_black_borders">
+
+        <TextView
+            android:id="@+id/einstellungen_buttongroesse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/einstellungen_buttongroesse_text"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            style="@style/luxurious"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/einstellungen_title" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="3dp">
+
+            <Button
+                android:id="@+id/einstellungen_buttongroesse_button_klein"
+                android:onClick="onClickSelectButtongroesse"
+                android:tag="0"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_with_black_borders"
+
+                android:text="@string/einstellungen_buttongroesse_button_klein_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/einstellungen_buttongroesse_button_mittel"
+                />
+
+            <Button
+                android:id="@+id/einstellungen_buttongroesse_button_mittel"
+                android:onClick="onClickSelectButtongroesse"
+                android:tag="1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_with_black_borders"
+
+                android:text="@string/einstellungen_buttongroesse_button_mittel_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/einstellungen_buttongroesse_button_klein"
+                app:layout_constraintEnd_toStartOf="@id/einstellungen_buttongroesse_button_gross"
+                />
+
+            <Button
+                android:id="@+id/einstellungen_buttongroesse_button_gross"
+                android:onClick="onClickSelectButtongroesse"
+                android:tag="2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_with_black_borders"
+
+                android:text="@string/einstellungen_buttongroesse_button_gross_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/einstellungen_buttongroesse_button_mittel"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/musiklautstaerke_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/effektlautstaerke_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttongroesse_layout"
+        android:background="@drawable/white_background_black_borders">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/einstellungen_musiklautstaerke"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/einstellungen_musiklautstaerke_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/einstellungen_musiklautstaerke_prozent"/>
+
+            <TextView
+                android:id="@+id/einstellungen_musiklautstaerke_prozent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="N.A."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                android:layout_margin="2dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/einstellungen_musiklautstaerke"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <SeekBar
+            android:id="@+id/einstellungen_musiklautstaerke_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_background_with_black_borders"
+            android:progressBackgroundTint="@color/white"
+            android:thumbTint="@color/white"
+            android:progressTint="@color/white"
+
+            android:max="100"
+            android:progress="20"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/effektlautstaerke_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@+id/musiklautstaerke_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/white_background_black_borders">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/einstellungen_effektlautstaerke"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/einstellungen_effektlautstaerke_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/einstellungen_effektlautstaerke_prozent"/>
+
+            <TextView
+                android:id="@+id/einstellungen_effektlautstaerke_prozent"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="N.A."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                style="@style/luxurious"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/einstellungen_effektlautstaerke"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <SeekBar
+            android:id="@+id/einstellungen_effektlautstaerke_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_background_with_black_borders"
+            android:progressBackgroundTint="@color/white"
+            android:thumbTint="@color/white"
+            android:progressTint="@color/white"
+
+            android:max="100"
+            android:progress="20"
+            />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/einstellungen_informationButtonSizeButton"
+        android:onClick="onClickInformationButton"
+        android:tag="0"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@id/buttongroesse_layout"
+        app:layout_constraintEnd_toStartOf="@id/buttongroesse_layout"
+        app:layout_constraintTop_toTopOf="@id/buttongroesse_layout"
+        android:layout_marginEnd="5dp"/>
+
+    <ImageButton
+        android:id="@+id/einstellungen_informationMusicVolumeButton"
+        android:onClick="onClickInformationButton"
+        android:tag="1"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@id/musiklautstaerke_layout"
+        app:layout_constraintEnd_toStartOf="@id/musiklautstaerke_layout"
+        app:layout_constraintTop_toTopOf="@id/musiklautstaerke_layout"
+        android:layout_marginEnd="5dp" />
+
+    <ImageButton
+        android:id="@+id/einstellungen_informationEffectsVolumeButton"
+        android:onClick="onClickInformationButton"
+        android:tag="2"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@id/effektlautstaerke_layout"
+        app:layout_constraintEnd_toStartOf="@id/effektlautstaerke_layout"
+        app:layout_constraintTop_toTopOf="@id/effektlautstaerke_layout"
+        android:layout_marginEnd="5dp"  />
+
+    <LinearLayout
+        android:id="@+id/einstellungen_informationLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_background_black_borders"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/buttongroesse_layout"
+        app:layout_constraintBottom_toBottomOf="@id/effektlautstaerke_layout"
+        app:layout_constraintStart_toStartOf="@id/buttongroesse_layout"
+        app:layout_constraintEnd_toEndOf="@id/buttongroesse_layout"
+        >
+
+        <ImageButton
+            android:id="@+id/einstellungen_closeInformationBtn"
+            android:onClick="onClickInformationSchliessen"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@color/red_holo"
+            android:src="@drawable/close"
+
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background_black_borders">
+
+            <LinearLayout
+                android:id="@+id/einstellungen_informationScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/einstellungen_informationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    style="@style/luxurious"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

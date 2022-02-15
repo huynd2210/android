@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/waveFragment_mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background_black_borders"
+    android:tag="waveTag">
+
+
+    <TextView
+        android:id="@+id/waveFragment_titleTextView"
+        style="@style/luxurious"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginTop="4dp"
+        android:text="Drücken Sie &quot;Nächste Welle starten &quot;."
+        android:textAlignment="center"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/waveFragment_goldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Momentanes Gold: "
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toTopOf="@+id/waveFragment_waveTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveFragment_titleTextView" />
+
+    <TextView
+        android:id="@+id/waveFragment_waveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="monospace"
+        android:text="Eben beendete Welle: "
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toTopOf="@+id/waveFragment_healthTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveFragment_goldTextView" />
+
+    <TextView
+        android:id="@+id/waveFragment_healthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="monospace"
+        android:text="Ihr momentanes Leben: "
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toTopOf="@+id/waveFragment_startWaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveFragment_waveTextView" />
+
+    <Button
+        android:id="@+id/waveFragment_startWaveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+        android:text="Nächste Welle starten"
+        style="@style/luxurious"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="3dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

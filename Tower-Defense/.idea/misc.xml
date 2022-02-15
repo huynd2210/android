@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.41510416666666666" />
+        <entry key="..\:/Users/tomgr/AppData/Local/Android/Sdk/platforms/android-31/data/res/drawable/btn_default.xml" value="0.3567708333333333" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable-v24/background_help_with_borders.xml" value="0.2625" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable-v24/button_background_black_borders.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable-v24/button_background_with_black_borders.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable-v24/button_background_with_borders.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable-v24/hilfebutton_background_with_borders.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable/button_background_with_red_borders.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable/button_selected_border.xml" value="0.3828125" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable/button_transparent_background_with_black_borders.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable/white_background_black_borders.xml" value="0.1" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/drawable/white_transparent_background_black_borders.xml" value="0.309375" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_einstellungen.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_extras.xml" value="0.1" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_game.xml" value="0.22" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_levelauswahl.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_lexikon.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_menu.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_onboarding.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_pause.xml" value="0.33" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/activity_statistiken.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_buy.xml" value="0.33" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_game_level.xml" value="0.22" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_game_level1.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_gamescreen.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_start_round.xml" value="0.25" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_upgrade.xml" value="0.33" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/fragment_wave.xml" value="0.22" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/slide_layout.xml" value="0.33" />
+        <entry key="..\:/Users/tomgr/OneDrive/Informatik/Android Studio/Hochschule/nzse-gruppenprojekt/Tower-Defense/app/src/main/res/layout/spielscreen_links.xml" value="0.321875" />
+        <entry key="app/src/main/res/drawable-v24/black_border_thin.xml" value="0.4161458333333333" />
+        <entry key="app/src/main/res/drawable-v24/black_border_thin_right.xml" value="0.4161458333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.559375" />
+        <entry key="app/src/main/res/drawable/black_border.xml" value="0.4161458333333333" />
+        <entry key="app/src/main/res/drawable/button_selected.xml" value="0.33958333333333335" />
+        <entry key="app/src/main/res/drawable/button_selected_border.xml" value="0.559375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.559375" />
+        <entry key="app/src/main/res/drawable/white_background_black_borders.xml" value="0.3355" />
+        <entry key="app/src/main/res/layout/activity_einstellungen.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_extras.xml" value="0.346875" />
+        <entry key="app/src/main/res/layout/activity_game.xml" value="0.3927083333333333" />
+        <entry key="app/src/main/res/layout/activity_levelauswahl.xml" value="0.5432291666666667" />
+        <entry key="app/src/main/res/layout/activity_lexikon.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4673913043478261" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.3845108695652174" />
+        <entry key="app/src/main/res/layout/activity_pause.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.4673913043478261" />
+        <entry key="app/src/main/res/layout/activity_statistiken.xml" value="0.4746376811594203" />
+        <entry key="app/src/main/res/layout/fragment_gamescreen.xml" value="0.3765625" />
+        <entry key="app/src/main/res/layout/fragment_start_round.xml" value="0.3765625" />
+        <entry key="app/src/main/res/layout/slide_layout.xml" value="0.3845108695652174" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

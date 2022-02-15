@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:tag="waveTag">
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewTower"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="7sp"
+        android:scrollbarStyle="outsideInset"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/textViewStonetower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:text="@string/stonetower_text"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStonetower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/stonetower_bild"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonStonetower"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_border"
+                    android:onClick="onClickSelectTower"
+                    android:tag="stonetower"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/textViewIrontower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:text="@string/irontower_text"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewIrontower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/irontower_bild"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonIrontower"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_border"
+                    android:onClick="onClickSelectTower"
+                    android:tag="irontower"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_margin="3dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/textViewFiretower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:text="@string/firetower_text"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imageViewFiretower"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/firetower_bild"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonFiretower"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_border"
+                    android:onClick="onClickSelectTower"
+                    android:tag="firetower"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textViewTowerDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:text="Wähle einen Turm aus!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:background="@drawable/black_border"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageButtonKaufen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="für %gold% kaufen"
+            android:enabled="false"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:background="#FFD700"/>
+
+        <Button
+            android:id="@+id/imageButtonAbbrechen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="abbrechen"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:background="#CF2929"/>
+
+    </LinearLayout>
+
+</LinearLayout>

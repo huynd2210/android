@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_extras"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu">
+
+
+    <TextView
+        android:id="@+id/extras_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/extras_title_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"  />
+
+    <Button
+        android:id="@+id/extras_statistiken"
+        style="@style/luxurious"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:onClick="onClickStatistikenSwtichToStatistiken"
+        android:text="@string/extras_button_statistiken_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/extras_lexikon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extras_title" />
+
+    <Button
+        android:id="@+id/extras_lexikon"
+        style="@style/luxurious"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:onClick="onClickLexikonSwtichToLexikon"
+        android:text="@string/extras_button_lexikon_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extras_statistiken" />
+
+
+    <Button
+        android:id="@+id/extras_hilfe"
+        android:onClick="onClickHilfeDisplayHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/button_hilfe_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/extras_zurueck"
+        android:onClick="onClickZurueckSwitchToMenu"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/button_zurueck_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp" />
+
+
+    <Button
+        android:id="@+id/extras_hilfeSchliessen"
+        android:onClick="onClickHilfeSchliessenCloseHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+
+        android:enabled="false"
+        android:visibility="invisible"
+
+        android:text="@string/button_hilfeSchliessen_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+        android:padding="5dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"  />
+
+
+    <ImageButton
+        android:id="@+id/extras_informationStatistikenButton"
+        android:onClick="onClickInformationButton"
+        android:tag="0"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/extras_statistiken"
+        app:layout_constraintEnd_toStartOf="@+id/extras_statistiken"
+        app:layout_constraintTop_toTopOf="@+id/extras_statistiken"
+        android:layout_marginEnd="5dp" />
+
+    <ImageButton
+        android:id="@+id/extras_informationLexikonButton"
+        android:onClick="onClickInformationButton"
+        android:tag="1"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/extras_lexikon"
+        app:layout_constraintEnd_toStartOf="@+id/extras_lexikon"
+        app:layout_constraintTop_toTopOf="@+id/extras_lexikon"
+        android:layout_marginEnd="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/extras_informationLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_background_black_borders"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@id/extras_lexikon"
+        app:layout_constraintEnd_toEndOf="@+id/extras_statistiken"
+        app:layout_constraintStart_toStartOf="@+id/extras_statistiken"
+        app:layout_constraintTop_toTopOf="@id/extras_statistiken">
+
+        <ImageButton
+            android:id="@+id/extras_closeInformationBtn"
+            android:onClick="onClickInformationSchliessen"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@color/red_holo"
+            android:scaleType="fitXY"
+            android:src="@drawable/close"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background_black_borders">
+
+            <LinearLayout
+                android:id="@+id/extras_informationScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/extras_informationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    style="@style/luxurious" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

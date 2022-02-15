@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#CCFFFFFF</color>
+    <color name="red_holo">#ffcc0000</color>
+
+    <color name="red">#ff0000</color>
+    <color name="dark_grey">#808080</color>
+    <color name="light_grey">#CDCDCD</color>
+    <color name="main_background">#FAFAFA</color>
+    <color name="gameLevel_background_wiese">#808000</color>
+    <color name="gameLevel_background_weg">#B97A57</color>
+
+    <color name="buttoncolor">#63768D</color>
+    <color name="buttoncolor_border">#3B4654</color>
+
+    <color name="buttoncolor_transparent">#AA63768D</color>
+    <color name="buttoncolor_border_trasparent">#503B4654</color>
+
+    <color name="buttoncolorHilfe">#FFFFFF</color>
+    <color name="buttoncolorHilfe_border">#D6D6D6</color>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:tag="waveTag">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="35"
+        android:weightSum="100"
+        android:background="@drawable/black_border">
+
+        <ImageView
+            android:id="@+id/tower_old_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/stonetower_lvl1_a1"/>
+
+        <TextView
+            android:id="@+id/tower_old_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            style="@style/luxurious"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:background="@drawable/arrow_down_bold_outline"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/black_border"
+        android:layout_weight="35"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/tower_new_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/stonetower_lvl2_a1"
+            />
+
+        <TextView
+            android:id="@+id/tower_new_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:text=""
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            style="@style/luxurious"
+            android:layout_margin="3dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/imageButtonKaufeUpgrade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="für %gold% verbessern"
+
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            style="@style/luxurious"
+
+            android:layout_margin="1dp"
+            android:background="#FFD700"/>
+
+        <Button
+            android:id="@+id/imageButtonVerkaufen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="verkaufen"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            style="@style/luxurious"
+            android:layout_margin="1dp"
+            android:background="#2E2EFE"/>
+
+        <Button
+            android:id="@+id/imageButtonAbbrechenUpgrade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="abbrechen"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            style="@style/luxurious"
+            android:layout_margin="1dp"
+            android:background="#CF2929"/>
+
+    </LinearLayout>
+
+</LinearLayout>

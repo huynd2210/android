@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/firetower_lvl1_a1"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/firetower_lvl1_a2"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/firetower_lvl1_a3"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/firetower_lvl1_a4"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/firetower_lvl1_a5"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/firetower_lvl1_a1"
+        android:duration="150" />
+
+</animation-list>

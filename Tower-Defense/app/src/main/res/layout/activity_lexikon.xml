@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lexikon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu">
+
+    <TextView
+        android:id="@+id/lexikon_title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/lexikon_title_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"  />
+
+    <Button
+        android:id="@+id/lexikon_hilfe"
+        android:onClick="onClickHilfeDisplayHilfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+
+        android:text="@string/button_hilfe_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"  />
+
+    <Button
+        android:id="@+id/lexikon_hilfeSchliessen"
+        android:onClick="onClickHilfeSchliessenCloseHilfe"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+
+        android:enabled="false"
+        android:visibility="invisible"
+
+        android:text="@string/button_hilfeSchliessen_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+        android:padding="5dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/lexikon_zurueck"
+        android:onClick="onClickZurueckSwitchToExtras"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_with_black_borders"
+        android:text="@string/button_zurueck_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        style="@style/luxurious"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/lexikon_frame"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_background_black_borders"
+
+        app:layout_constraintTop_toBottomOf="@id/lexikon_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lexikon_entitiyInformation_container"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/lexikon_entityPicture"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"/>
+
+            <ScrollView
+                android:id="@+id/lexikon_description_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:fadeScrollbars="false"
+                android:scrollbarSize="7sp"
+                android:scrollbarStyle="outsideInset"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lexikon_entityDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wählen Sie einen Gegenstand aus."
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        style="@style/luxurious"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/lexikon_entitySelectior_container"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+
+            android:fadeScrollbars="false"
+            android:scrollbarSize="7sp"
+            android:scrollbarStyle="outsideInset">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lexikon_category_enemy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lexikon_categoryEnemy_text"
+                        android:textSize="20sp"
+                        style="@style/luxurious"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/lexikon_enemy1_button"
+                            android:onClick="onClickDiscplayEntity"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_background_with_black_borders"
+
+                            android:text="@string/lexikon_enemy1_text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/luxurious"
+
+                            android:layout_margin="1dp"/>
+
+                        <Button
+                            android:id="@+id/lexikon_enemy2_button"
+                            android:onClick="onClickDiscplayEntity"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_background_with_black_borders"
+
+                            android:text="@string/lexikon_enemy2_text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/luxurious"
+
+                            android:layout_margin="1dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lexikon_category_Tower"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lexikon_categoryTower_text"
+                        android:textSize="20sp"
+                        style="@style/luxurious"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/lexikon_turm1_button"
+                            android:onClick="onClickDiscplayEntity"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_background_with_black_borders"
+
+                            android:text="@string/stonetower_text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/luxurious"
+
+                            android:layout_margin="1dp"/>
+
+                        <Button
+                            android:id="@+id/lexikon_turm2_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:onClick="onClickDiscplayEntity"
+                            android:background="@drawable/button_background_with_black_borders"
+
+                            android:text="@string/irontower_text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/luxurious"
+
+                            android:layout_margin="1dp"/>
+
+                        <Button
+                            android:id="@+id/lexikon_turm3_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:onClick="onClickDiscplayEntity"
+                            android:background="@drawable/button_background_with_black_borders"
+
+                            android:text="@string/firetower_text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            style="@style/luxurious"
+
+                            android:layout_margin="1dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/lexikon_informationLexikonButton"
+        android:onClick="onClickInformationButton"
+        android:tag="0"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_hilfe_background_with_grey_borders"
+        android:scaleType="fitCenter"
+        android:src="@drawable/information"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/lexikon_frame"
+        app:layout_constraintEnd_toStartOf="@+id/lexikon_frame"
+        app:layout_constraintTop_toTopOf="@+id/lexikon_frame"
+        android:layout_marginEnd="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lexikon_informationLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_background_black_borders"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/lexikon_frame"
+        app:layout_constraintEnd_toEndOf="@+id/lexikon_frame"
+        app:layout_constraintStart_toStartOf="@+id/lexikon_frame"
+        app:layout_constraintTop_toTopOf="@+id/lexikon_frame">
+
+
+        <ImageButton
+            android:id="@+id/lexikon_closeInformationBtn"
+            android:onClick="onClickInformationSchliessen"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="@color/red_holo"
+            android:src="@drawable/close"
+
+
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp" />
+
+        <ScrollView
+            android:id="@+id/lexikon_information_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background_black_borders">
+
+            <LinearLayout
+                android:id="@+id/lexikon_information_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/lexikon_informationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    style="@style/luxurious" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
